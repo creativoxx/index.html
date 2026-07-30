@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maideth & Alexander | Nuestra Boda</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- PORTADA FIJA -->
+
+<section class="portada">
+
+<div class="overlay"></div>
+
+<div class="contenido-portada">
+
+<p class="subtitulo">
+NUESTRA BODA
+</p>
+
+
+<h1>
+Maideth
+<br>
+&
+<br>
+Alexander
+</h1>
+
+
+<p class="fecha">
+18 • OCTUBRE • 2026
+</p>
+
+
+<button onclick="document.querySelector('#historia').scrollIntoView()">
+
+Descubre nuestra celebración
+
+</button>
+
+
+</div>
+
+</section>
+
+
+
+<!-- CONTENIDO QUE PASA SOBRE LA PORTADA -->
+
+
+<main class="contenido">
+
+
+<section id="historia" class="bloque">
+
+<h2>
+Después de recorrer juntos un hermoso camino...
+</h2>
+
+
+<p>
+
+Hemos decidido dar el siguiente paso:
+unir nuestras vidas para siempre.
+
+Nos encantaría contar con tu compañía
+en este día tan especial, lleno de amor,
+alegría y nuevos comienzos.
+
+</p>
+
+
+</section>
+
+
+
+
+<!-- CUENTA REGRESIVA -->
+
+
+<section class="contador">
+
+<h2>
+Falta muy poco
+</h2>
+
+
+<div class="tiempo">
+
+
+<div>
+<span id="dias">00</span>
+Días
+</div>
+
+
+<div>
+<span id="horas">00</span>
+Horas
+</div>
+
+
+<div>
+<span id="minutos">00</span>
+Min
+</div>
+
+
+<div>
+<span id="segundos">00</span>
+Seg
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- EVENTO -->
+
+
+<section class="bloque evento">
+
+
+<h2>
+El gran día
+</h2>
+
+
+<h3>
+Vereda El Noral
+</h3>
+
+
+<p>
+Copacabana Antioquia
+<br>
+Salón campestre colonial
+</p>
+
+
+<div class="horario">
+
+
+<p>
+🕓 Hora llegada:
+<br>
+4:30 PM
+</p>
+
+
+<p>
+Entrada salón:
+<br>
+5:00 PM
+</p>
+
+
+<p>
+Finaliza:
+<br>
+11:00 PM
+</p>
+
+
+</div>
+
+
+
+<a class="boton"
+
+href="https://www.google.com/maps/search/?api=1&query=Vereda+El+Noral+Copacabana+Antioquia"
+
+target="_blank">
+
+📍 Ver ubicación
+
+</a>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- VESTIMENTA -->
+
+
+<section class="vestimenta">
+
+
+<h2>
+Código de vestimenta
+</h2>
+
+
+<h3>
+Semiformal
+</h3>
+
+
+<p>
+
+🤍 Caballeros:
+<br>
+Pantalón negro,
+camisa blanca manga larga o corta.
+
+</p>
+
+
+<p>
+
+🌿 Damas:
+<br>
+Vestido largo.
+
+</p>
+
+
+<p>
+
+Agradecemos evitar los colores blanco
+y tonos celestes.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- GALERIA -->
+
+
+<section class="galeria">
+
+
+<h2>
+Nuestros recuerdos
+</h2>
+
+
+<div class="slider">
+
+
+<img src="images/foto1.jpg">
+
+<img src="images/foto2.jpg">
+
+<img src="images/foto3.jpg">
+
+<img src="images/foto4.jpg">
+
+
+</div>
+
+
+<div class="controles">
+
+<button onclick="moverGaleria(-1)">
+◀
+</button>
+
+
+<button onclick="moverGaleria(1)">
+▶
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- REGALO -->
+
+
+<section class="regalo">
+
+
+<h2>
+Lluvia de sobres
+</h2>
+
+
+<p>
+
+El mejor regalo es compartir este día contigo.
+
+Si deseas obsequiarnos algo,
+una contribución en efectivo será recibida
+con mucho cariño y gratitud.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- MUSICA -->
+
+
+<section class="musica">
+
+
+<button onclick="playMusica()" class="play">
+
+▶
+
+</button>
+
+
+<p>
+Escucha nuestra canción
+<br>
+Fruta Fresca
+
+</p>
+
+
+<audio id="cancion">
+
+<source src="audio/fruta-fresca.mp3">
+
+</audio>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- CONFIRMACION -->
+
+
+<section class="confirmacion">
+
+
+<h2>
+Confirmar asistencia
+</h2>
+
+
+<form>
+
+
+<input placeholder="Nombre completo">
+
+
+<select>
+
+<option>
+¿Asistirás?
+</option>
+
+<option>
+Sí asistiré
+</option>
+
+
+<option>
+No podré asistir
+</option>
+
+</select>
+
+
+<input placeholder="Número de personas">
+
+
+<textarea placeholder="Mensaje"></textarea>
+
+
+<a class="boton"
+
+href="https://wa.me/573022663489"
+
+target="_blank">
+
+Enviar confirmación WhatsApp
+
+</a>
+
+
+</form>
+
+
+</section>
+
+
+
+
+
+</main>
+
+
+
+
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
